@@ -1,0 +1,17 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\86177\AppData\Local\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(45): warning:  #223-D: function "Get_Current_angle" declared implicitly
+  		Get_Current_angle();
+main.c(48): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(strff2,"%.2f Current_Angle\n",Current_Angle);//%0.2f  angle
+main.c(64): warning:  #223-D: function "strlen" declared implicitly
+  		USART1_Send_Data((u8 *)strff2, strlen(strff2));
+main.c(40): warning:  #177-D: variable "strff"  was declared but never referenced
+  		char strff[21];
+main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=25328 RO-data=444 RW-data=464 ZI-data=5320  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 4 Warning(s).
+Build Time Elapsed:  00:00:03
